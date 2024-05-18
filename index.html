@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div id="iniciarSesion">
+        <form id="formulario">
+            <h6 style="font-weight: bold;">Nombre de usuario</h6>
+            <input class="form-control" type="text" id="username" aria-label="default input example">
+            <hr>
+            <div class="mb-3">
+              <label for="Email" class="form-label">Direccion de Correo</label>
+              <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+            </div>
+            <h6 id="invalido" style="color: red; padding: 1vh 0;">Correo invalido</h6>
+            <button type="button" class="btn btn-primary"
+            id="iniciar">Continuar</button>
+        </form>
+        <button type="button" id="iniciarbtn" class="btn btn-warning">Iniciar Juego</button>
+    </div>
+    <section class="section1"></section>
+    <div>
+        <div class="accordion" id="accordionExample" style="display: none;">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Estadisticas
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h6 id="sinEstadistica" style="display: none;">¡Juega un Rato!</h6>
+                  <h6 id="jugador"></h6>
+                  <h6 id="conEstadistica"></h6>
+                  <h6 id="tUltimaPartida"></h6>
+                </div>
+              </div>
+            </div>
+        </div>
+        <section class="section2">
+            <div id="informacion">
+                <h6 id="fallo" style="display: none;">Fallaste</h6>
+                <h6 id="acierto" style="display: none;">Acertaste</h6>
+                <h6 id="ganarJuego" style="display: none;">Gano el juego</h6>
+            </div>
+            <h2 id="aciertos" class="estadisticas">Aciertos</h2>
+            <h2 id="cronometro" class="estadisticas">Tiempo: 0</h2>
+            <h2 id="movimientos" class="estadisticas">Movimientos</h2>
+        </section>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
